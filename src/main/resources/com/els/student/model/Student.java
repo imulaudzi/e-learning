@@ -1,5 +1,7 @@
 package com.els.student.model;
 
+import java.util.Date;
+
 /**
  * Created by IntelliJ IDEA.
  * User: ISAAC
@@ -9,4 +11,12 @@ package com.els.student.model;
  */
 public class Student {
 
+    private long id;
+    private String name;
+    private String surname;
+    private Date dateOfbirth;
+    private String gender;
+    private String emailAddrs;
+    private String screenName;
+    private Date createDate;
 }
