@@ -1,18 +1,14 @@
-package com.els.student.model;
+package com.els.common;
 
 import javax.persistence.*;
 import java.util.Date;
 
 /**
- * Created by IntelliJ IDEA.
- * User: ISAAC
- * Date: 12/18/14
- * Time: 2:50 PM
- * To change this template use File | Settings | File Templates.
+ * Created by ISAAC on 12/30/2014.
  */
 @Entity
-@Table(name = "STUDENT")
-public class Student {
+@Table(name = "USER")
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -93,5 +89,12 @@ public class Student {
 
     public void setCreateDate(Date createDate) {
         this.createDate = createDate;
+    }
+
+    @Override
+    public  String toString(){
+        final StringBuilder sb = new StringBuilder();
+
+        return sb.toString();
     }
 }
